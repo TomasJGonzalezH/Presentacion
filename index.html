@@ -1,138 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentación Slide Responsive</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="slider-container">
-    <div class="slider">
-      <!-- Slide 1 -->
-      <div class="slide active" style="background-image: url('img/Fondo1.png');">
-        <img src="img/Logoppal.png" alt="Logo principal" class="logo-grande">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formae Studio Presentación</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay-fijo">
+      <img src="img/Credits.png" alt="Overlay créditos" />
+    </div>
+
+    <div class="fondo1">
+      <img class="fondo" src="img/FondoDifu1.png" alt="Fondo 1" />
+    </div>
+
+    <section class="seccion">
+      <div class="servicios">
+        <div class="servicio">
+          <span class="titulo-servicio">3D MODELING</span>
+          <img src="img/Modeling.png" alt="3D Modeling" />
+        </div>
+        <div class="servicio">
+          <span class="titulo-servicio">RENDERING</span>
+          <img src="img/Rendering.png" alt="Rendering" />
+        </div>
+        <div class="servicio">
+          <span class="titulo-servicio">360 TOUR</span>
+          <img src="img/360Tour.png" alt="360 Tour" />
+        </div>
       </div>
-      <!-- Slide 2 -->
-      <div class="slide" style="background-color: #000;">
-        <div class="slide2-icons">
-          <div class="slide2-item">
-            <div class="slide2-title">3D MODELING</div>
-            <img src="img/Modeling.png" alt="3D Modeling">
+    </section>
+
+    <section class="seccion target">
+      <div class="target-contenido">
+        <span class="titulo-target">TARGET</span>
+        <img src="img/Target.png" alt="Target" />
+      </div>
+    </section>
+
+    <section class="seccion search">
+      <div class="search-contenido">
+        <img class="search-img" src="img/Search.png" alt="Search" />
+        <img class="logo-search" src="img/Logo.png" alt="Logo" />
+        <span class="texto-search">CAN FIND US AT</span>
+      </div>
+    </section>
+
+    <section class="seccion mockups-mobile">
+      <div class="mockups-mobile-container">
+        <div class="mobile-top">
+          <img src="img/HomeM.png" alt="Home Mobile" />
+          <div class="mobile-url">formaestudio.com</div>
+        </div>
+
+        <div class="mobile-bottom-row">
+          <div class="mobile-item" style="margin-top: -10vh">
+            <div class="mobile-label">Services</div>
+            <img src="img/ServicesM.png" alt="Services Mobile" />
           </div>
-          <div class="slide2-item">
-            <div class="slide2-title">RENDERING</div>
-            <img src="img/Rendering.png" alt="Rendering">
+          <div class="mobile-item">
+            <div class="mobile-label">Gallery</div>
+            <img src="img/GalleryM.png" alt="Gallery Mobile" />
           </div>
-          <div class="slide2-item">
-            <div class="slide2-title">360 TOUR</div>
-            <img src="img/360Tour.png" alt="360 Tour">
-          </div>
-        </div>
-      </div>
-       <!-- Slide 3 -->
-       <div class="slide" style="background-image: url('img/Fondo2.png');">
-        <h1 class="slide3-title">TARGET</h1>
-        <div class="slide3-img-container">
-          <img src="img/Target.png" alt="Target" class="slide3-img">
-        </div>
-      </div>
-      <!-- Slide 4 -->
-      <div class="slide" style="background-color: #000; position: relative;">
-        <div class="slide4-center-container">
-          <img src="img/Search.png" alt="Search" class="slide4-search-img">
-          <div class="slide4-overlay">
-            <img src="img/Logo.png" alt="Logo" class="slide4-logo">
-            <div class="slide4-text">CAN FIND US AT</div>
+          <div class="mobile-item" style="margin-top: -10vh">
+            <div class="mobile-label">Nosotros</div>
+            <img src="img/ContactM.png" alt="Contact Mobile" />
           </div>
         </div>
       </div>
-      <!-- Slide 5 -->
-      <div class="slide" style="background-color: #000; display: flex; align-items: center; justify-content: center;">
-        <div class="slide5-row">
-          <img src="img/HomeM.png" alt="Home" class="slide5-img">
-          <img src="img/ServicesM.png" alt="Services" class="slide5-img">
-          <img src="img/GalleryM.png" alt="Gallery" class="slide5-img">
-          <img src="img/ContactM.png" alt="Contact" class="slide5-img">
-        </div>
+    </section>
+
+    <section class="seccion mockups">
+      <div class="mockups-contenido">
+        <span class="titulo-responsive">RESPONSIVE</span>
+        <img src="img/RespContact.png" alt="Mockup Contact" />
+        <img src="img/RespHome.png" alt="Mockup Home" />
+        <img src="img/RespModeling.png" alt="Mockup Modeling" />
       </div>
-      <!-- Slide 6 -->
-      <div class="slide" style="background-image: url('img/Fondo3.png');">
-        <h1 class="slide6-title">RESPONSIVE</h1>
-        <div class="slide6-row">
-          <img src="img/RespHome.png" alt="Responsive Home" class="slide6-img">
-          <img src="img/RespModeling.png" alt="Responsive Modeling" class="slide6-img">
-          <img src="img/RespContact.png" alt="Responsive Contact" class="slide6-img">
-        </div>
-      </div>
-      <!-- Slide 7 -->
-      <div class="slide slide7-scroll" style="background-color: #000; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; overflow-y: auto;">
-        <img src="img/HomeWireframe.png" alt="Wireframe Home" class="slide7-img">
-        <a href="https://tomasjgonzalezh.github.io/Formae/index.html" target="_blank" class="slide7-link">
-          <img src="img/SearchWeb.png" alt="Ir a la web" class="slide7-searchweb-img">
+    </section>
+
+    <section class="seccion webreal">
+      <img src="img/HomeWireframe.png" alt="Web real" />
+    </section>
+
+    <section class="seccion web-real">
+      <div class="web-real-contenido">
+        <a href="https://tomasjgonzalezh.github.io/Formae/" target="_blank" rel="noopener noreferrer">
+          <img src="img/SearchWeb.png" alt="Web real" class="web-real-img" />
         </a>
       </div>
-      <!-- Slide 8 -->
-      <div class="slide slide8" style="background-image: url('img/Fondo4.png');">
-        <h1 class="slide8-title">PRICING</h1>
-        <div class="slide8-cards">
-          <!-- Card 1 -->
-          <div class="slide8-card">
-            <div class="slide8-card-overlay">
-              <div class="slide8-card-title">DISEÑO DE INFORMACIÓN</div>
-              <ul class="slide8-card-list">
-                <li>Análisis de objetivos, público objetivo y competencia.</li>
-                <li>Mapeo del sitio y wireframes.</li>
-                <li>Copywriting optimizado para SEO y experiencia de usuario.</li>
-              </ul>
-              <div class="slide8-card-price">USD 250</div>
-            </div>
+    </section>
+
+    <section class="seccion pricing">
+      <span class="titulo-pricing">PRICING</span>
+      <div class="pricing-cajas">
+        <div class="pricing-caja">
+          <div class="pricing-texto">
+            <h3>DISEÑO DE<br />INFORMACIÓN</h3>
+            <ul class="pricing-lista">
+              <li>Análisis de objetivos, público objetivo y competencia</li>
+              <li>Mapeo del sitio y wireframes</li>
+              <li>Copywriting optimizado para SEO y experiencia de usuario</li>
+            </ul>
+            <span class="precio">USD 250</span>
           </div>
-          <!-- Card 2 -->
-          <div class="slide8-card">
-            <div class="slide8-card-overlay">
-              <div class="slide8-card-title">DISEÑO UX/UI</div>
-              <ul class="slide8-card-list">
-                <li>Diseño de identidad visual</li>
-                <li>Creación de versiones previas.</li>
-                <li>Diseño responsivo, adaptable para distintos dispositivos.</li>
-              </ul>
-              <div class="slide8-card-price">USD 470</div>
-            </div>
+        </div>
+        <div class="pricing-caja">
+          <div class="pricing-texto">
+            <h3>DISEÑO<br />UX/UI</h3>
+            <ul class="pricing-lista">
+              <li>Diseño de identidad visual</li>
+              <li>Creación de versiones previas</li>
+              <li>
+                Diseño responsivo, adaptabilidad para distintos dispositivos
+              </li>
+            </ul>
+            <span class="precio">USD 470</span>
           </div>
-          <!-- Card 3 -->
-          <div class="slide8-card">
-            <div class="slide8-card-overlay">
-              <div class="slide8-card-title">DESARROLLO WEB</div>
-              <ul class="slide8-card-list">
-                <li>Maquetación en HTML y CSS.</li>
-                <li>Agregar interactividad y funcionalidades dinámicas.</li>
-                <li>Optimización del código.</li>
-              </ul>
-              <div class="slide8-card-price">USD 630</div>
-            </div>
+        </div>
+        <div class="pricing-caja">
+          <div class="pricing-texto">
+            <h3>DESARROLLO<br />WEB</h3>
+            <ul class="pricing-lista">
+              <li>Maquetación en HTML y CSS</li>
+              <li>Agregado de interactividad y funcionalidades dinámicas</li>
+              <li>Optimización del código</li>
+            </ul>
+            <span class="precio">USD 630</span>
           </div>
-          <!-- Card 4 -->
-          <div class="slide8-card">
-            <div class="slide8-card-overlay">
-              <div class="slide8-card-title">HOSTING Y DOMINIO</div>
-              <ul class="slide8-card-list">
-                <li>Compra de dominio: Registro del nombre (al año).</li>
-                <li>Hosting: Servidor para almacenar el sitio (por mes).</li>
-              </ul>
-              <div class="slide8-card-price">DOMINIO: USD 30<br>HOSTING: USD 10</div>
+        </div>
+        <div class="pricing-caja">
+          <div class="pricing-texto">
+            <h3>HOSTING Y<br />DOMINIO</h3>
+            <ul class="pricing-lista">
+              <li>Compra del dominio: Registro del nombre (al año).</li>
+              <li>Hosting: Servidor para almacenar el sitio (por mes)</li>
+            </ul>
+            <div class="pricing-hosting">
+              <span class="price-small">DOMINIO: USD 30</span>
+              <span class="price-small">HOSTING: USD 10</span>
             </div>
           </div>
         </div>
-        <div class="slide8-total">TOTAL USD 1390</div>
       </div>
-    </div>
-    <!-- Flechas -->
-    <button class="arrow left" id="prev">&#10094;</button>
-    <button class="arrow right" id="next">&#10095;</button>
-    <!-- Indicadores -->
-    <div class="indicators" id="indicators"></div>
-  </div>
-  <script src="slider.js"></script>
-</body>
+      <div class="total">
+        <span>TOTAL <span style="font-size: 0.6em">USD</span> 1390</span>
+      </div>
+    </section>
+  </body>
 </html>
